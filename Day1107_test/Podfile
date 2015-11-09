@@ -5,7 +5,11 @@
 
 target 'Day1107_test' do
 
-pod ‘MJRefresh’
+pod 'AFNetworking'
+
+pod 'MJRefresh'
+
+pod 'MJExtension'
 
 end
 
