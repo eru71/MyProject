@@ -11,6 +11,8 @@ pod 'MJRefresh'
 
 pod 'MJExtension'
 
+pod 'Masonry'
+
 end
 
 target 'Day1107_testTests' do

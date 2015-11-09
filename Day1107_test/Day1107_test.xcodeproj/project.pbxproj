@@ -10,7 +10,6 @@
 		129615F6D2E9F002855734F8 /* libPods-Day1107_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76133C9AAA56E0D42CB40972 /* libPods-Day1107_test.a */; };
 		855AAA0C1BEDEB440080E1EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855AAA0B1BEDEB440080E1EC /* main.m */; };
 		855AAA0F1BEDEB440080E1EC /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 855AAA0E1BEDEB440080E1EC /* AppDelegate.mm */; };
-		855AAA121BEDEB440080E1EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855AAA111BEDEB440080E1EC /* ViewController.m */; };
 		855AAA151BEDEB440080E1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855AAA131BEDEB440080E1EC /* Main.storyboard */; };
 		855AAA181BEDEB440080E1EC /* Day1107_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 855AAA161BEDEB440080E1EC /* Day1107_test.xcdatamodeld */; };
 		855AAA1A1BEDEB440080E1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855AAA191BEDEB440080E1EC /* Assets.xcassets */; };
@@ -34,6 +33,7 @@
 		855AAA5D1BEDEF4C0080E1EC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 855AAA5C1BEDEF4C0080E1EC /* libsqlite3.0.tbd */; };
 		855AAA5F1BEDEF530080E1EC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855AAA5E1BEDEF530080E1EC /* CoreTelephony.framework */; };
 		855AAA611BEDEF590080E1EC /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 855AAA601BEDEF590080E1EC /* libstdc++.6.0.9.tbd */; };
+		85A6D67E1BF0492900B62F33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855AAA111BEDEB440080E1EC /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -485,9 +485,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				855AAA121BEDEB440080E1EC /* ViewController.m in Sources */,
 				855AAA0F1BEDEB440080E1EC /* AppDelegate.mm in Sources */,
 				855AAA0C1BEDEB440080E1EC /* main.m in Sources */,
+				85A6D67E1BF0492900B62F33 /* ViewController.m in Sources */,
 				855AAA181BEDEB440080E1EC /* Day1107_test.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

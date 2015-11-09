@@ -20,16 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.6.2):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Masonry (0.6.3)
   - MJExtension (3.0.3)
   - MJRefresh (3.0.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - Masonry
   - MJExtension
   - MJRefresh
 
 SPEC CHECKSUMS:
   AFNetworking: 7f317038a9710cabfa43ec56396b307b45df72ab
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MJExtension: de557e1c48ef3212590d3203764c8003fae68815
   MJRefresh: ca22bb7197c4a17a0491763773cd5cb106b2a810
 
