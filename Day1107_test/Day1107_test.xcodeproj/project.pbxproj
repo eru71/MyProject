@@ -56,17 +56,18 @@
 /* Begin PBXFileReference section */
 		6C389366575A24B4835348C3 /* Pods-Day1107_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day1107_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Day1107_test/Pods-Day1107_test.debug.xcconfig"; sourceTree = "<group>"; };
 		76133C9AAA56E0D42CB40972 /* libPods-Day1107_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Day1107_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		855569C71BF0274D00182150 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		855AAA071BEDEB440080E1EC /* Day1107_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day1107_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		855AAA0B1BEDEB440080E1EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		855AAA0D1BEDEB440080E1EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		855AAA0E1BEDEB440080E1EC /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		855AAA101BEDEB440080E1EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		855AAA111BEDEB440080E1EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		855AAA0D1BEDEB440080E1EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		855AAA0E1BEDEB440080E1EC /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = ../AppDelegate.mm; sourceTree = "<group>"; };
+		855AAA101BEDEB440080E1EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Day1107_test/ViewController.h; sourceTree = SOURCE_ROOT; };
+		855AAA111BEDEB440080E1EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Day1107_test/ViewController.m; sourceTree = SOURCE_ROOT; };
 		855AAA141BEDEB440080E1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		855AAA171BEDEB440080E1EC /* Day1107_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Day1107_test.xcdatamodel; sourceTree = "<group>"; };
 		855AAA191BEDEB440080E1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		855AAA1C1BEDEB440080E1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		855AAA1E1BEDEB440080E1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		855AAA1E1BEDEB440080E1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		855AAA231BEDEB440080E1EC /* Day1107_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day1107_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		855AAA271BEDEB440080E1EC /* Day1107_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day1107_testTests.m; sourceTree = "<group>"; };
 		855AAA291BEDEB440080E1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +81,7 @@
 		855AAA441BEDED640080E1EC /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
 		855AAA451BEDED640080E1EC /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
 		855AAA461BEDED640080E1EC /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
-		855AAA4E1BEDEEBB0080E1EC /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		855AAA4E1BEDEEBB0080E1EC /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = ../mapapi.bundle; sourceTree = "<group>"; };
 		855AAA501BEDEF240080E1EC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		855AAA521BEDEF2C0080E1EC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		855AAA541BEDEF330080E1EC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -144,6 +145,71 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		855569BE1BF01F6800182150 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		855569BF1BF01F6900182150 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		855569C01BF01F6900182150 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				855AAA0D1BEDEB440080E1EC /* AppDelegate.h */,
+				855AAA0E1BEDEB440080E1EC /* AppDelegate.mm */,
+				855569C71BF0274D00182150 /* PrefixHeader.pch */,
+				855AAA131BEDEB440080E1EC /* Main.storyboard */,
+				855AAA1B1BEDEB440080E1EC /* LaunchScreen.storyboard */,
+				855AAA1E1BEDEB440080E1EC /* Info.plist */,
+				855AAA4E1BEDEEBB0080E1EC /* mapapi.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		855569C11BF01F6900182150 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		855569C21BF01F6900182150 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		855569C31BF01F6900182150 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		855569C41BF01F6900182150 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				855AAA101BEDEB440080E1EC /* ViewController.h */,
+				855AAA111BEDEB440080E1EC /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		855569C51BF01F7A00182150 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		855AA9FE1BEDEB440080E1EC = {
 			isa = PBXGroup;
 			children = (
@@ -169,15 +235,15 @@
 		855AAA091BEDEB440080E1EC /* Day1107_test */ = {
 			isa = PBXGroup;
 			children = (
-				855AAA0D1BEDEB440080E1EC /* AppDelegate.h */,
-				855AAA0E1BEDEB440080E1EC /* AppDelegate.mm */,
-				855AAA101BEDEB440080E1EC /* ViewController.h */,
-				855AAA111BEDEB440080E1EC /* ViewController.m */,
-				855AAA131BEDEB440080E1EC /* Main.storyboard */,
+				855569C51BF01F7A00182150 /* ViewModel */,
+				855569BE1BF01F6800182150 /* Model */,
+				855569BF1BF01F6900182150 /* NetManager */,
+				855569C01BF01F6900182150 /* Resource */,
+				855569C11BF01F6900182150 /* Util */,
+				855569C21BF01F6900182150 /* Vendor */,
+				855569C31BF01F6900182150 /* View */,
+				855569C41BF01F6900182150 /* ViewController */,
 				855AAA191BEDEB440080E1EC /* Assets.xcassets */,
-				855AAA1B1BEDEB440080E1EC /* LaunchScreen.storyboard */,
-				855AAA1E1BEDEB440080E1EC /* Info.plist */,
-				855AAA4E1BEDEEBB0080E1EC /* mapapi.bundle */,
 				855AAA161BEDEB440080E1EC /* Day1107_test.xcdatamodeld */,
 				855AAA0A1BEDEB440080E1EC /* Supporting Files */,
 			);
@@ -464,6 +530,7 @@
 				855AAA141BEDEB440080E1EC /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		855AAA1B1BEDEB440080E1EC /* LaunchScreen.storyboard */ = {
@@ -472,6 +539,7 @@
 				855AAA1C1BEDEB440080E1EC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -568,6 +636,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Day1107_test",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Day1107_test/PrefixHeader.pch";
 				INFOPLIST_FILE = Day1107_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "UMR.Day1107-test";
@@ -584,6 +654,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Day1107_test",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Day1107_test/PrefixHeader.pch";
 				INFOPLIST_FILE = Day1107_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "UMR.Day1107-test";
