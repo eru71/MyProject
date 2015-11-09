@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#define BaiduAK @"r3kLlMTorEWzyk2nzzKd2bew"
+#define BaiduAK @"rMWxudGZgbERZxNBuqajO7zp"
 @interface AppDelegate ()
 @property (nonatomic,strong) BMKMapManager *mapManager;
 @end

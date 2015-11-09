@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <BaiduMapAPI_Map/BMKMapComponent.h>
 #import <CoreLocation/CoreLocation.h>
+
 @interface ViewController ()<BMKMapViewDelegate,BMKLocationServiceDelegate>
 @property (nonatomic,strong) BMKMapView *mapView;
 @property (nonatomic,strong) CLLocationManager *manager;
@@ -32,21 +33,21 @@
 //处理方向变更信息
 - (void)didUpdateUserHeading:(BMKUserLocation *)userLocation
 {
-    //NSLog(@"heading is %@",userLocation.heading);
+    NSLog(@"heading is %@",userLocation.heading);
 }
 //处理位置坐标更新
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation
 {
-    //NSLog(@"didUpdateUserLocation lat %f,long %f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
+    NSLog(@"didUpdateUserLocation lat %f,long %f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
     //普通态
     //以下_mapView为BMKMapView对象
     _mapView.showsUserLocation = YES;//显示定位图层
     [_mapView updateLocationData:userLocation];
-    
     BMKCoordinateSpan span = BMKCoordinateSpanMake(0.01, 0.01);
     BMKCoordinateRegion region = BMKCoordinateRegionMake(userLocation.location.coordinate, span);
     [self.mapView setRegion:region animated:YES];
 }
+
 
 -(void)viewWillAppear:(BOOL)animated
 {

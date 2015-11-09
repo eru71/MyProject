@@ -33,6 +33,8 @@
 		855AAA5D1BEDEF4C0080E1EC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 855AAA5C1BEDEF4C0080E1EC /* libsqlite3.0.tbd */; };
 		855AAA5F1BEDEF530080E1EC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855AAA5E1BEDEF530080E1EC /* CoreTelephony.framework */; };
 		855AAA611BEDEF590080E1EC /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 855AAA601BEDEF590080E1EC /* libstdc++.6.0.9.tbd */; };
+		8562BC4B1BF0A95D00B728A6 /* RecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8562BC4A1BF0A95D00B728A6 /* RecommendController.m */; };
+		8562BC4E1BF0AE7700B728A6 /* RecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8562BC4D1BF0AE7700B728A6 /* RecommendModel.m */; };
 		85A6D67E1BF0492900B62F33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855AAA111BEDEB440080E1EC /* ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,10 @@
 		855AAA5C1BEDEF4C0080E1EC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		855AAA5E1BEDEF530080E1EC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		855AAA601BEDEF590080E1EC /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		8562BC491BF0A95D00B728A6 /* RecommendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendController.h; sourceTree = "<group>"; };
+		8562BC4A1BF0A95D00B728A6 /* RecommendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendController.m; sourceTree = "<group>"; };
+		8562BC4C1BF0AE7700B728A6 /* RecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendModel.h; sourceTree = "<group>"; };
+		8562BC4D1BF0AE7700B728A6 /* RecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendModel.m; sourceTree = "<group>"; };
 		96D70952F02A3492260C0889 /* Pods-Day1107_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day1107_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Day1107_test/Pods-Day1107_test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +154,8 @@
 		855569BE1BF01F6800182150 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8562BC4C1BF0AE7700B728A6 /* RecommendModel.h */,
+				8562BC4D1BF0AE7700B728A6 /* RecommendModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +207,8 @@
 			children = (
 				855AAA101BEDEB440080E1EC /* ViewController.h */,
 				855AAA111BEDEB440080E1EC /* ViewController.m */,
+				8562BC491BF0A95D00B728A6 /* RecommendController.h */,
+				8562BC4A1BF0A95D00B728A6 /* RecommendController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -487,8 +497,10 @@
 			files = (
 				855AAA0F1BEDEB440080E1EC /* AppDelegate.mm in Sources */,
 				855AAA0C1BEDEB440080E1EC /* main.m in Sources */,
+				8562BC4E1BF0AE7700B728A6 /* RecommendModel.m in Sources */,
 				85A6D67E1BF0492900B62F33 /* ViewController.m in Sources */,
 				855AAA181BEDEB440080E1EC /* Day1107_test.xcdatamodeld in Sources */,
+				8562BC4B1BF0A95D00B728A6 /* RecommendController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
