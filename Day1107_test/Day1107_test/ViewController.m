@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <BaiduMapAPI_Map/BMKMapComponent.h>
-#import <CoreLocation/CoreLocation.h>
+
 
 @interface ViewController ()<BMKMapViewDelegate,BMKLocationServiceDelegate>
 @property (nonatomic,strong) BMKMapView *mapView;
@@ -17,6 +16,36 @@
 @end
 
 @implementation ViewController
+
++(ViewController *)sharedInstance{
+    static ViewController *_instance = nil;
+    @synchronized(self) {
+        if (_instance == nil) {
+            _instance = [[self alloc]init];
+        }
+    }return _instance;
+}
+
+- (id)init{
+    if (self == [super init]) {
+        [self initBMKUserLocation];
+    }
+    return self;
+}
+
+-(void)initBMKUserLocation{
+    _locService = [[BMKLocationService alloc]init];
+    _locService.delegate = self;
+    [self startLocation];
+}
+
+-(void)startLocation{
+    [_locService startUserLocationService];
+}
+
+-(void)stopLocation{
+    [_locService stopUserLocationService];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,8 +75,12 @@
     BMKCoordinateSpan span = BMKCoordinateSpanMake(0.01, 0.01);
     BMKCoordinateRegion region = BMKCoordinateRegionMake(userLocation.location.coordinate, span);
     [self.mapView setRegion:region animated:YES];
+    [self stopLocation];
 }
 
+- (void)didStopLocatingUser{
+    
+}
 
 -(void)viewWillAppear:(BOOL)animated
 {

@@ -17,6 +17,8 @@
     return @{@"deals" : [RecommendDataDealsModel class]};
 }
 
+
+
 @end
 
 
