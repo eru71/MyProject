@@ -57,7 +57,34 @@
     _locService.delegate = self;
     //启动LocationService
     [_locService startUserLocationService];
+    NSString *httpUrl = @"http://apis.baidu.com/baidunuomi/openapi/searchdeals";
+    NSString *httpArg = @"city_id=100010000&cat_ids=326&location=116.4374%2C39.8719&keyword=%E9%87%91%E9%BC%8E%E8%BD%A9&radius=3000&sort=0&page=1&page_size=10&is_reservation_required=0";
+    [self request: httpUrl withHttpArg: httpArg];
 }
+
+
+
+-(void)request: (NSString*)httpUrl withHttpArg: (NSString*)HttpArg  {
+    NSString *urlStr = [[NSString alloc]initWithFormat: @"%@?%@", httpUrl, HttpArg];
+    NSURL *url = [NSURL URLWithString: urlStr];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL: url cachePolicy: NSURLRequestUseProtocolCachePolicy timeoutInterval: 10];
+    [request setHTTPMethod: @"GET"];
+    [request addValue: @"f7b5381c4abf264012ae123cfa3ff40f" forHTTPHeaderField: @"apikey"];
+    [NSURLConnection sendAsynchronousRequest: request
+                                       queue: [NSOperationQueue mainQueue]
+                           completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error){
+                               if (error) {
+                                   NSLog(@"Httperror: %@%ld", error.localizedDescription, error.code);
+                               } else {
+                                   NSInteger responseCode = [(NSHTTPURLResponse *)response statusCode];
+                                   NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                                   NSLog(@"HttpResponseCode:%ld", responseCode);
+                                   NSLog(@"HttpResponseBody %@",responseString);
+                               }
+                           }];
+}
+
+
 //实现相关delegate 处理位置信息更新
 //处理方向变更信息
 - (void)didUpdateUserHeading:(BMKUserLocation *)userLocation

@@ -17,7 +17,9 @@
     return @{@"deals" : [RecommendDataDealsModel class]};
 }
 
-
++ (NSDictionary *)mj_replacedKeyFromPropertyName{
+    return @{@"qxerrno":@"errno"};//qxerrno;//errno
+}
 
 @end
 
@@ -26,6 +28,10 @@
 
 + (NSDictionary *)objectClassInArray{
     return @{@"shops" : [RecommendDataDealsShopsModel class]};
+}
+
++ (NSDictionary *)mj_replacedKeyFromPropertyName{
+    return @{@"qxdescription":@"description"};
 }
 
 @end

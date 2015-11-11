@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		129615F6D2E9F002855734F8 /* libPods-Day1107_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76133C9AAA56E0D42CB40972 /* libPods-Day1107_test.a */; };
+		851BFE341BF3654800AC74AD /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 851BFE331BF3654800AC74AD /* BaseNetManager.m */; };
+		851BFE371BF365EB00AC74AD /* RecommendNetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 851BFE361BF365EB00AC74AD /* RecommendNetModel.m */; };
 		855AAA0C1BEDEB440080E1EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855AAA0B1BEDEB440080E1EC /* main.m */; };
 		855AAA0F1BEDEB440080E1EC /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 855AAA0E1BEDEB440080E1EC /* AppDelegate.mm */; };
 		855AAA151BEDEB440080E1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855AAA131BEDEB440080E1EC /* Main.storyboard */; };
@@ -58,6 +60,10 @@
 /* Begin PBXFileReference section */
 		6C389366575A24B4835348C3 /* Pods-Day1107_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day1107_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Day1107_test/Pods-Day1107_test.debug.xcconfig"; sourceTree = "<group>"; };
 		76133C9AAA56E0D42CB40972 /* libPods-Day1107_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Day1107_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		851BFE321BF3654800AC74AD /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
+		851BFE331BF3654800AC74AD /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
+		851BFE351BF365EB00AC74AD /* RecommendNetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendNetModel.h; sourceTree = "<group>"; };
+		851BFE361BF365EB00AC74AD /* RecommendNetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendNetModel.m; sourceTree = "<group>"; };
 		855569C71BF0274D00182150 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		855AAA071BEDEB440080E1EC /* Day1107_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day1107_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		855AAA0B1BEDEB440080E1EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -163,6 +169,10 @@
 		855569BF1BF01F6900182150 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
+				851BFE321BF3654800AC74AD /* BaseNetManager.h */,
+				851BFE331BF3654800AC74AD /* BaseNetManager.m */,
+				851BFE351BF365EB00AC74AD /* RecommendNetModel.h */,
+				851BFE361BF365EB00AC74AD /* RecommendNetModel.m */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -495,11 +505,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				851BFE371BF365EB00AC74AD /* RecommendNetModel.m in Sources */,
 				855AAA0F1BEDEB440080E1EC /* AppDelegate.mm in Sources */,
 				855AAA0C1BEDEB440080E1EC /* main.m in Sources */,
 				8562BC4E1BF0AE7700B728A6 /* RecommendModel.m in Sources */,
 				85A6D67E1BF0492900B62F33 /* ViewController.m in Sources */,
 				855AAA181BEDEB440080E1EC /* Day1107_test.xcdatamodeld in Sources */,
+				851BFE341BF3654800AC74AD /* BaseNetManager.m in Sources */,
 				8562BC4B1BF0A95D00B728A6 /* RecommendController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
