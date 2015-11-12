@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "BaseModel.h"
 @class RecommendDataModel,RecommendDataDealsModel,RecommendDataDealsShopsModel;
 
 #pragma mark - RecommendModel
-@interface RecommendModel : NSObject
+@interface RecommendModel : BaseModel
 
-@property (nonatomic, assign) NSInteger qxerrno;//errno
+@property (nonatomic, assign) NSInteger qxerrno;
 
 @property (nonatomic, copy) NSString *msg;
 

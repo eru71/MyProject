@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RecommendNetModel.h"
 #define BaiduAK @"rMWxudGZgbERZxNBuqajO7zp"
 @interface AppDelegate ()
 @property (nonatomic,strong) BMKMapManager *mapManager;
@@ -23,6 +24,7 @@
     if (!ret) {
         NSLog(@"manager start failed!");
     }
+    
     return YES;
 }
 
