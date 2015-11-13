@@ -25,13 +25,12 @@
         NSLog(@"manager start failed!");
     }
     
-<<<<<<< HEAD
+
     RecommendModel *model1 = [RecommendModel new];
     RecommendNetModel *model = [RecommendNetModel new];
     model1 = [model request];
+    NSLog(@"%@",model1);
     
-=======
->>>>>>> origin/master
     return YES;
 }
 

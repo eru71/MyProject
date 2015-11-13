@@ -39,7 +39,7 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL: url cachePolicy: NSURLRequestUseProtocolCachePolicy timeoutInterval: 10];
     [request setHTTPMethod: @"GET"];
     [request addValue: @"f7b5381c4abf264012ae123cfa3ff40f" forHTTPHeaderField: @"apikey"];
-<<<<<<< HEAD
+
 //    [NSURLConnection sendAsynchronousRequest: request
 //                                       queue: [NSOperationQueue mainQueue]
 //                           completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error){
@@ -59,15 +59,17 @@
         NSData* data=[html dataUsingEncoding:NSUTF8StringEncoding];
         id dict=[NSJSONSerialization  JSONObjectWithData:data options:0 error:nil];
         
-        NSArray *newModels = responseObject[@"dict"];
+        NSArray *newModels = dict[@"data"];
         NSMutableArray *models = [NSMutableArray arrayWithCapacity:newModels.count];
-        for (NSDictionary *dic in newModels) {
-            _model = [RecommendModel mj_objectWithKeyValues:dic];
-//            [models addObject:model];
-        }
+//        for (NSDictionary *dic in newModels) {
+//            _model = [RecommendModel mj_objectWithKeyValues:dic];
+////            [models addObject:model];
+//        }
 //        _model = models;
         
-//        NSLog(@"获取到的数据为：%@",dict);
+        
+        _model = [RecommendDataModel mj_objectWithKeyValues:newModels];
+        NSLog(@"获取到的数据为：%@",dict);
     }failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 //        NSLog(@"发生错误！%@",error);
     }];
@@ -77,31 +79,6 @@
     return _model;
 }
 
-
-=======
-    [NSURLConnection sendAsynchronousRequest: request
-                                       queue: [NSOperationQueue mainQueue]
-                           completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error){
-                               if (error) {
-                                   NSLog(@"Httperror: %@%ld", error.localizedDescription, error.code);
-                               } else {
-                                   NSInteger responseCode = [(NSHTTPURLResponse *)response statusCode];
-                                   NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//                                   _array = [RecommendModel parset:data];
-                                   _dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];//转换数据格式
-                                   
-                                   NSLog(@"HttpResponseCode:%ld", responseCode);
-                                   NSLog(@"HttpResponseBody %@",responseString);
-                               }
-                           }];
-//    for (_model in _dict) {
-//        
-//    }
-    [_model setValuesForKeysWithDictionary:_dict];
-    return _model;
-}
-
->>>>>>> origin/master
 - (NSDictionary *)dict {
 	if(_dict == nil) {
 		_dict = [[NSDictionary alloc] init];
