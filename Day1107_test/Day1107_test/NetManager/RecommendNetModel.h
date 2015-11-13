@@ -9,6 +9,16 @@
 #import "BaseNetManager.h"
 #import "RecommendModel.h"
 @interface RecommendNetModel : BaseNetManager
-//@property (nonatomic,strong) RecommendModel *model;
+@property (nonatomic,strong) RecommendModel *model;
+@property (nonatomic,strong) NSMutableArray *array;
+
 -(RecommendModel *)request;
+
+//+ (void)getCompletionHandle:(void(^)(id model, NSError *error))completionHandle;
+
+
+
+
+
+
 @end
