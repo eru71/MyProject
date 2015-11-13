@@ -14,8 +14,11 @@
 
 -(RecommendModel *)request;
 
+<<<<<<< HEAD
 //+ (void)getCompletionHandle:(void(^)(id model, NSError *error))completionHandle;
 
+=======
+>>>>>>> origin/master
 
 
 

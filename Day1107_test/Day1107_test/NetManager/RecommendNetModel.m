@@ -39,6 +39,7 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL: url cachePolicy: NSURLRequestUseProtocolCachePolicy timeoutInterval: 10];
     [request setHTTPMethod: @"GET"];
     [request addValue: @"f7b5381c4abf264012ae123cfa3ff40f" forHTTPHeaderField: @"apikey"];
+<<<<<<< HEAD
 //    [NSURLConnection sendAsynchronousRequest: request
 //                                       queue: [NSOperationQueue mainQueue]
 //                           completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error){
@@ -77,6 +78,30 @@
 }
 
 
+=======
+    [NSURLConnection sendAsynchronousRequest: request
+                                       queue: [NSOperationQueue mainQueue]
+                           completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error){
+                               if (error) {
+                                   NSLog(@"Httperror: %@%ld", error.localizedDescription, error.code);
+                               } else {
+                                   NSInteger responseCode = [(NSHTTPURLResponse *)response statusCode];
+                                   NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//                                   _array = [RecommendModel parset:data];
+                                   _dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];//转换数据格式
+                                   
+                                   NSLog(@"HttpResponseCode:%ld", responseCode);
+                                   NSLog(@"HttpResponseBody %@",responseString);
+                               }
+                           }];
+//    for (_model in _dict) {
+//        
+//    }
+    [_model setValuesForKeysWithDictionary:_dict];
+    return _model;
+}
+
+>>>>>>> origin/master
 - (NSDictionary *)dict {
 	if(_dict == nil) {
 		_dict = [[NSDictionary alloc] init];
